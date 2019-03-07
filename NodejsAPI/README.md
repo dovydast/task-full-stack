@@ -2,7 +2,7 @@
 
 ## To serve API in localhost
 
-Run `node app.js` for a dev server. Navigate to `http://localhost:3000/` 
+Run `node app.js`. Navigate to `http://localhost:3000/` 
 
 ## npm install
 
