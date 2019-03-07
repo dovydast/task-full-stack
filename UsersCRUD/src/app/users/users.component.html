@@ -1,0 +1,18 @@
+<div class="row justify-content-md-center">
+  <div class="col-md-5 col-sm-12" *ngFor="let user of data; let i = index">
+      <div class="card">
+          <img class="card-img-top" src="../../assets/images/hostinger-logo.png" height="130px" alt="{{user.name}}">
+              <div class="card-body">
+                 <p>ID  {{user.id}}</p>
+                 <h4 class="card-title text-light">{{user.name}}</h4>
+                 <p class="card-text">
+                 <i class="fas fa-user text-light"></i><span class="text-light"> &nbsp;{{user.username}}</span> <br>
+                 <i class="fas fa-envelope text-white"> </i><span class="text-light"> &nbsp;{{user.email}}</span>
+                </p>
+                   <button class="btn btn-primary mr-1 p-1" (click)="editUser(user.id)">Edit <i class="fas fa-edit"></i></button>
+                   <button class="btn btn-danger p-1" (click)="removeUser(user.id, i)">Delete <i class="fas fa-trash"></i></button>
+              </div>
+     </div>
+  </div>
+</div>
+

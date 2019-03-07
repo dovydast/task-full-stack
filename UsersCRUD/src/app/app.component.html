@@ -1,0 +1,15 @@
+<div class="container">
+  <app-header></app-header>
+  <div *ngIf="router.url === '/users'">
+  <div class="jumbotron jumbotron-fluid p-3">
+      <div class="container">
+        <h1 class="display-5 text-light">Angular User CRUD</h1>
+        <p class="lead text-light">This is assignment task for hostinger. For making back-end i did rest api with express.js in node.js and hosted on heroku</p>
+        <p class="lead text-light">For the first app launch it take 5-7 seconds to wake up api and pull data from it, because it is hosted on a free service/dyno. </p>
+        <p class="lead text-light"> Since its a free dyno it puts app into sleep if that dyno receives no web traffic in a 30 minute periode, it will put on sleep mode.</p>
+      </div>
+    </div>
+  </div>
+  <router-outlet></router-outlet>
+</div>
+

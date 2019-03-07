@@ -1,0 +1,57 @@
+*{
+    font-family: 'Nunito', sans-serif;
+}
+
+.alert {
+    position: relative;
+    padding: 0.55rem 1.25rem;
+    margin-bottom: 1rem;
+    border: 1px solid transparent;
+    border-radius: 0rem;
+    top: 5px;
+  }
+  .alert-danger {
+    color: #fff;
+    background-color: #c72525;
+  }
+  .ng-valid[required][_ngcontent-c2],
+  .ng-valid.required[_ngcontent-c2] {
+    border-left: 5px solid #34d63e !important;
+  }
+  .ng-valid[required],
+  .ng-valid.required {
+    border-left: 5px solid #42A948;
+  }
+  .ng-invalid:not(form) {
+    border-left: 5px solid #a94442;
+  }
+  .ng-valid:not(form) {
+    border-left: 5px solid #42A948;
+  }
+#toast-container > div {
+    opacity:1;
+}
+body{
+        background: url('./assets/images/shapes.jpg');
+        background-repeat: no-repeat;
+        background-size: cover;
+        min-height: 100vh;
+        background-attachment: fixed;
+}
+
+@media screen and (min-width:1120px) and (max-width:1600px) {
+    body {
+        padding-top:8%;
+    }
+}
+@media screen and (min-width:767px) and (max-width:1120px) {
+    body {
+        padding-top:10%;
+    }
+
+}
+@media screen and (min-width:350px) and (max-width:767px) {
+    body {
+        padding-top:20%;
+    }
+}

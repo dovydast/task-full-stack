@@ -1,0 +1,52 @@
+<div class="formholder">
+  <section>
+    <h2 class="text-center movetext">Edit user</h2>
+  </section>
+
+  <form (ngSubmit)="onSubmit(editForm)" #editForm="ngForm">
+    <div class="form-row">
+
+      <div class="form-group col-md-6">
+        <input placeholder="Name" #name="ngModel" name="name" [(ngModel)]="user.name" class="form-control" id="name"
+          required minlength="3">
+
+             <div *ngIf="name.invalid && (name.dirty || name.touched)" class="alert alert-danger">
+                 <div *ngIf="name.errors.required">
+                   Name is required.
+                 </div>
+                      <div *ngIf="name.errors.minlength">
+                         Name must be at least 3 characters long.
+                     </div>
+             </div>
+      </div>
+
+      <div class="form-group col-md-6">
+           <input placeholder="Username" #username="ngModel" name="username" [(ngModel)]="user.username" class="form-control" id="username" required>
+
+                  <div *ngIf="username.invalid && (username.dirty || username.touched)" class="alert alert-danger">
+                       <div *ngIf="username.errors.required">
+                           Username is required.
+                       </div>
+                  </div>
+
+      </div>
+
+    </div>
+
+    <div class="form-group">
+
+      <input type="email" #email="ngModel" placeholder="Email" [(ngModel)]="user.email" name="email" class="form-control" id="email" required pattern="^[a-zA-Z0-9_.+-]+@[a-zA-Z0-9-]+.[a-zA-Z0-9-.]+$">
+             <div *ngIf="email.invalid && (email.dirty || email.touched)" class="alert alert-danger">
+                 <div *ngIf="email.errors.required">
+                     Email is required.
+                </div>
+             <div *ngIf="email.errors.pattern">
+                     Email is not valid, please enter correct email
+             </div>
+            </div>
+
+    </div>
+
+    <button [disabled]="editForm.invalid" class="btn btn-primary btn-lg btn-block">Update user</button>
+  </form>
+</div>

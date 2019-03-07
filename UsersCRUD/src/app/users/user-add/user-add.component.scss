@@ -1,0 +1,21 @@
+.formholder{
+    padding: 5.5rem;
+    border-width: 1px;
+    margin: 3rem 15% 0px;
+    border: solid #343a40;
+    background-color: #343a40d6;
+   .movetext{
+    border-style: solid;
+    position: relative;
+    top: -3vh;
+    border-color: #adadad;
+    color: #e8e8e8;
+    }
+}
+
+@media screen and (min-width:420px) and (max-width:892px) {
+    .formholder {
+        margin: 3rem -3% 0px;
+    }
+}
+
