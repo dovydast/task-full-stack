@@ -1,3 +1,10 @@
+Task was made in Angular and express node.js
+  To test or access API - https://angular-crud-for-hostinger.herokuapp.com/api/users
+  For first data load, wait 5-7 seconds to wake up the api from sleep mode.
+ 
+
+
+
 # Fullstack Developer Task
 
 Create user management CRUD application.
